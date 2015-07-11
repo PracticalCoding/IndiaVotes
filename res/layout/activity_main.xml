@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#3366FF" >
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="2dp"
+                    android:onClick="moreButtonOnClick"
+                    android:src="@drawable/ic_action_vote_india_morelightdark" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="2dp"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="IndiaVotes"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="2dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_action_vote_india" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Enter your voting card No."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:text="(card NO. is on top of both face in voting card)"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Ex:NNA0727214" >
+>
+    </EditText>
+    
+     <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:onClick="SaveOnClick"
+        android:text="Send" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/voterinfo_linear_layout"
+        android:background="@drawable/rounded_corner" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#8B6ED7"
+            android:text="Voter Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:text="waiting..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        
+         
+       <TextView
+            android:id="@+id/textView3"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="#8B6ED7"
+            android:textStyle="italic"
+            android:text="Assembly Constituency No and Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+       <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+             android:text="waiting..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+       
+       <TextView
+           android:id="@+id/textView5"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="2dp"
+           android:background="#8B6ED7"
+           android:text="Polling both address"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="@android:color/white"
+           android:textStyle="italic" />
+       
+       <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:text="waiting..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+       
+       <TextView
+           android:id="@+id/textView7"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="2dp"
+           android:background="#8B6ED7"
+           android:text="Serial No"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="@android:color/white"
+           android:textStyle="italic" />
+       
+       <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+             android:text="waiting..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+       
+      <TextView
+           android:id="@+id/textView9"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="2dp"
+           android:background="#8B6ED7"
+           android:text="C/O"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="@android:color/white"
+           android:textStyle="italic" />
+       
+       <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+             android:text="waiting..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/appinfo_linear_layout"
+    android:background="@drawable/rounded_corner_gradient"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="\t*Presently this app only supports Karnataka Assembly Election 2013\n\t* This application is based on messsage service provided by cheif election commission of India(ECI) \n \t*The app formats the message to match the format of ECI and sends it and on reciving message from ECI , data is shown in clean view \n \t*Nominal SMS charges apply(This app doesn&apos;t charge you any money) \n\t*Application doesn&apos;t use any private data, As you have seen we dont use internet permission \n \t*Finally : The app moto is to help find polling booth without any confusion "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        />
+</LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
